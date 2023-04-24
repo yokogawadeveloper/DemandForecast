@@ -14,13 +14,12 @@
                     {{ loginMessage }}
                 </div>
                 <input type="username" class="fadeIn second" name="username" [(ngModel)]="usermodel.username"
-                   placeholder="login" >
+                   placeholder="Username" >
                 <input type="password" class="fadeIn third" name="password" [(ngModel)]="usermodel.password"
-                   placeholder="password"> 
+                   placeholder="Password"> 
                 <button type="submit" mat-stroked-button (click)="loginuser()" color="light" class="mt-2 w-50 fadeIn fourth">
                     <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>Login
                 </button>
-
             </form>
             <!-- Remind Passowrd -->
             <div id="formFooter">

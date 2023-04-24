@@ -9200,3 +9200,193 @@ Traceback (most recent call last):
   File "c:\users\464_0521\appdata\local\programs\python\python39\lib\smtplib.py", line 885, in sendmail
     raise SMTPRecipientsRefused(senderrs)
 smtplib.SMTPRecipientsRefused: {'ankul.gautam@yokogawa.com': (550, b'5.7.1 Unable to relay for ankul.gautam@yokogawa.com')}
+WARNING  2023-04-24 08:08:31,211  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  17584  Bad Request: /industrywise/ 
+
+WARNING  2023-04-24 08:08:54,967  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  10172  Not Found: /forecastoutput/ 
+
+WARNING  2023-04-24 08:08:55,041  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  10172  Not Found: /favicon.ico 
+
+ERROR  2023-04-24 08:09:16,192  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  13056  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:09:16,218  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  10172  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:09:16,279  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  16776  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:09:16,285  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  6788  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:09:16,309  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  784  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:09:51,488  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  6788  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:09:57,904  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  6788  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
+ERROR  2023-04-24 08:13:05,029  D:\DemandForecast\DFBackend\venv\lib\site-packages\django\utils\log.py  log  222  6788  Internal Server Error: /staticfilesdownload/ 
+Traceback (most recent call last):
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "D:\DemandForecast\DFBackend\venv\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\DemandForecast\DFBackend\datas\views\chartViews.py", line 83, in get
+    zip_file = open('static/'+name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/industryWiseData.xlsx'
